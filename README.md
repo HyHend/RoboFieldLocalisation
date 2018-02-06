@@ -6,14 +6,14 @@ Using the video as found in https://youtu.be/DYQFtrk6B18.
 - Find an approximate location for the robot in the field (Note: Because of field symmetry there are likely to be more possible locations)
 
 ### How?
-####(step 1)
+#### (step 1)
 Find robot's position in respect of the visible lines from the robot's vision (circle in the video):
 - Find the lines
 - Retrieve a random set of points on the visible lines (pts)
 - Compensate lens distortion for each pt in pts
 - Calculate values comparable to the real world distance and angle for each pt in pts
 
-####(step 2). 
+#### (step 2). 
 Localization in total field:
 - Use n particles (prs), uniformly distributed over the field
 - Move each pr in prs in an random direction (in each iteration)
@@ -32,3 +32,4 @@ Localization in total field:
 
 ### Sample image 
 Sample image of what it looks like. At a given early moment in the process
+<img src="https://github.com/HyHend/RoboFieldLocalisation/blob/master/screenshot.jpg" width="500px" alt="Screenshot">
